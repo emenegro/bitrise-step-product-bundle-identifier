@@ -1,6 +1,6 @@
 # Bitrise Step to set iOS `PRODUCT_BUNDLE_IDENTIFIER` setting.
 
-Replaces Xcode's project PRODUCT_BUNDLE_IDENTIFIER setting by passing in a new value. This is the recommended way to substitute the bundle identifier instead of modifiying the `CFBundleIdentifier` setting in the `Info.plist` file.
+Replaces Xcode's project `PRODUCT_BUNDLE_IDENTIFIER` setting by passing in a new value. This is the recommended way to substitute the bundle identifier instead of modifiying the `CFBundleIdentifier` setting in the `Info.plist` file.
 
 From [Xcode 7 Release Notes](https://developer.apple.com/library/content/documentation/Xcode/Conceptual/RN-Xcode-Archive/Chapters/xc7_release_notes.html):
 

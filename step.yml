@@ -1,7 +1,7 @@
 title: "REPLACE PRODUCT_BUNDLE_IDENTIFIER"
 summary: Replaces Xcode's project PRODUCT_BUNDLE_IDENTIFIER setting.
 description: |-
-  Replaces Xcode's project PRODUCT_BUNDLE_IDENTIFIER setting by passing in a new value.
+  Replaces Xcode's project `PRODUCT_BUNDLE_IDENTIFIER` setting by passing in a new value.
   This is the recommended way to substitute the bundle identifier
   instead of modifiying the `CFBundleIdentifier` setting in the `Info.plist` file.
 
