@@ -8,10 +8,6 @@ if [ -z "${project_path}" ]; then
   echo "[ERROR] Missing required input: project_path"
   exit 1
 fi
-if [ -z "${current_bundle_identifier}" ]; then
-  echo "[ERROR] Missing required input: current_bundle_identifier"
-  exit 1
-fi
 
 if [ -z "${new_bundle_identifier}" ]; then
   echo "[ERROR] Missing required input: new_bundle_identifier"
@@ -27,12 +23,11 @@ fi
 
 # Info statements
 echo "[INFO] Path of .xcodeproj file:		${project_path}"
-echo "[INFO] Current Bundle Identifier: 	${current_bundle_identifier}"
 echo "[INFO] New Bundle Identifier: 		${new_bundle_identifier}"
 
 # Replaces the setting PRODUCT_BUNDLE_IDENTIFIER in the .pbxproj file.
 echo ""
 echo "Replacing..."
-sed -i "" "s/PRODUCT_BUNDLE_IDENTIFIER = ${current_bundle_identifier}/PRODUCT_BUNDLE_IDENTIFIER = ${new_bundle_identifier}/g" $PBXPROJ_FILE
+sed -i "" "s/\(PRODUCT_BUNDLE_IDENTIFIER = \).*\(;\)/\1${new_bundle_identifier}\2/" $PBXPROJ_FILE
 echo ""
 echo "[SUCCESS] Replace done!"

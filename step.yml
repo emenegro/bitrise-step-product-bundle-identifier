@@ -28,13 +28,8 @@ inputs:
       title: "Xcode project path"
       summary: Path to the iOS project `.xcodeproj` file.
       is_required: true
-  - current_bundle_identifier:
-    opts:
-      title: "Current bundle identifier"
-      summary: The current bundle identifier to be replaced.
-      is_required: true
   - new_bundle_identifier:
     opts:
       title: "New bundle identifier"
-      summary: The new bundle identifier.
+      summary: The new bundle identifier to be set.
       is_required: true

@@ -19,8 +19,7 @@ workflows:
         title: Replace Xcode PRODUCT_BUNDLE_IDENTIFIER.
         inputs:
         - project_path: "./BitriseStepTest/BitriseStepTest.xcodeproj"
-        - current_bundle_identifier: "com.mnm.BitriseStepTest"
-        - new_bundle_identifier: "com.mnm.BitriseStepTest_NEW"
+        - new_bundle_identifier: "com.mnm.gromenaguer"
 
   # ----------------------------------------------------------------
   # --- workflows to Share this step into a Step Library
